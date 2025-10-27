@@ -23,9 +23,10 @@
 <body>
     <button id="colorSwitcher">Switch Colour</button>
     <script>
+        const button = document.getElementById('colorSwitcher');
         const colors = ['blue', 'green', 'orange'];
         let currentIndex = 0;
-        const button = document.getElementById('colorSwitcher');
+
         button.addEventListener('click', () => {
             currentIndex = (currentIndex + 1) % colors.length;
             document.body.style.backgroundColor = colors[currentIndex];
